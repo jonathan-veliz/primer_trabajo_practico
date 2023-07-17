@@ -1,15 +1,11 @@
-/*Nos piden crear una matriz de 4×4 de números enteros que inicialmente esta vacía, nos piden hacer un menú con estas opciones:*/
+/*Nos piden crear una matriz de 4×4 de números enteros que inicialmente esta vacía, nos piden hacer un menú con estas opciones: i<4 y j<4*/
 
 /*Rellenar TODA la matriz de números, debes pedírselo al usuario.
-let matriz=[];*/
-//function llenarMatriz(){
+*/
+
   let matriz = [];
 function llenarMatriz() {
   
-  
-   
- 
-
   for (let i = 0; i < 4; i++) {
     matriz[i] = [];
     for (let j = 0; j < 4; j++) {
@@ -18,7 +14,7 @@ function llenarMatriz() {
       );
       while (isNaN(parseInt(valor))) {
         valor = prompt(
-          "El valor ingresado no es un número. Ingrese un valor válido para la matriz [" +
+          "El valor ingresado no es un número [" +
             i +
             "][" +
             j +
@@ -32,8 +28,6 @@ function llenarMatriz() {
 }
 
 // Llamando a la función para llenar la matriz
-
-
 
 /*
  *Suma de una fila que se pedirá al usuario (controlar que elija una correcta)*/
@@ -119,7 +113,7 @@ function promedioMatriz(){
         } else {
           let fila = parseInt(prompt("Ingrese un número de fila: "));
           if (fila >= 0 && fila < 4) {
-            console.log("La suma de la fila  es: " + sumaFila(fila));
+            console.log("Eligio la "+ fila +" y su suma es: " + sumaFila(fila));
           } else {
             alert("Fila incorrecta!!!");
           }
