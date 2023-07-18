@@ -14,12 +14,7 @@ function llenarMatriz() {
       );
       while (isNaN(parseInt(valor))) {
         valor = prompt(
-          "El valor ingresado no es un número [" +
-            i +
-            "][" +
-            j +
-            "]:"
-        );
+          "El valor ingresado no es un número [" + i +"][" +j +"]:");
       }
       matriz[i][j] = parseInt(valor);
     }
@@ -113,7 +108,7 @@ function promedioMatriz(){
         } else {
           let fila = parseInt(prompt("Ingrese un número de fila: "));
           if (fila >= 0 && fila < 4) {
-            console.log("Eligio la "+ fila +" y su suma es: " + sumaFila(fila));
+            console.log("Eligio la fila"+ fila +" y su suma es: " + sumaFila(fila));
           } else {
             alert("Fila incorrecta!!!");
           }
@@ -126,7 +121,8 @@ function promedioMatriz(){
         } else {
           let columna = parseInt(prompt("Ingrese un número de la columna: "));
           if (columna >= 0 && columna < 4) {
-            console.log("Eligio la "+columna +" y su suma  es: " + sumarColumna(columna));
+            console.log("Eligio la columna "+columna +" y su suma  es: " + sumarColumna(columna));
+            
           } else {
             alert("Columna incorrecta!!!");
           }
@@ -137,7 +133,7 @@ function promedioMatriz(){
         if(matriz.length === 0){
           alert("¡Matriz vacía! Debes llenarla primero.");
         }else{
-          console.log("la suma de la diagonal es "+ sumarDiagonal());
+          console.log("la suma de la \ \ diagonal es " + sumarDiagonal());
         }
         
         break;
@@ -145,7 +141,7 @@ function promedioMatriz(){
         if (matriz.length === 0) {
           alert("¡Matriz vacía! Debes llenarla primero.");
         } else {
-          console.log("la suma de la diagonal inversa es " + sumarDiagonalInversa());
+          console.log("la suma de la / / diagonal inversa es " + sumarDiagonalInversa());
         }
         
         
